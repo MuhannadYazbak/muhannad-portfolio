@@ -11,7 +11,7 @@ async function getMarkdownContent(filename: string) {
 }
 
 export default async function Home() {
-  const content = await getMarkdownContent('HomePage.md')
+  const content = await getMarkdownContent('Projects.md')
 
   return (
     <main>
