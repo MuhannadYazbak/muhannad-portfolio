@@ -63,6 +63,18 @@ export default function Narrative() {
                         I replied with a metaphor she could grasp:“No, I’m building the site that sells phones — like my own Shein version.
                     </p>
                 </article>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
+                    <h2 id ='8th-article' className="text-2xl font-semibold mb-2">🛠️ From Chaos to Confidence: Optimizing TechMart’s CI Pipeline</h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        I set out to ensure quality and precision across TechMart’s codebase, so I kicked off a GitHub Actions CI pipeline. Simple goal, complex journey.<br/>
+                        The beginning was rocky—wrangling YAML syntax, sequencing steps, and learning the quirks of GitHub’s runner environment.<br/>
+                        I thought I had it nailed… until the first run: 58 out of 62 tests failed, despite passing locally.<br/>
+                        That’s when the real work began.<br/>
+                        I re-engineered the pipeline with a mock-driven approach, tailored for SSR and metadata fetches.<br/>
+                        Each test was dissected, optimized, and rebuilt to reflect real-world behavior. The result? 100% pass rate, both locally and in CI.<br/>
+                        And the cherry on top: I slashed the runtime from ~17 minutes to just ~5 minutes, with test execution clocking in at ~37 seconds.
+                    </p>
+                </article>
 
             </section>
         </main>

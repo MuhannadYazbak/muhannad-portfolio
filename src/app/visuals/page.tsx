@@ -23,6 +23,9 @@ export default function VisualsPage() {
           { src: '/AllureDuration.png', caption: 'Allure Tests Durations' },
           { src: '/TechMartHome.png', caption: 'TechMart Home Flow' },
           { src: '/TechMartCheckout.png', caption: 'TechMart Checkout Flow' },
+          { src: '/NewAllureReport.png', caption: 'Locally 100% passing' },
+          { src: '/CIPassed.png', caption: 'CI pipeline 100% passing and optimized' },
+
         ].map(({ src, caption }) => (
           <figure key={src} onClick={() => handleImageClick(src)} className="cursor-pointer">
             <Image
