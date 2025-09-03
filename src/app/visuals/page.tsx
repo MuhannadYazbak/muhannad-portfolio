@@ -26,6 +26,7 @@ export default function VisualsPage() {
           { src: '/NewAllureReport.png', caption: 'Locally 100% passing' },
           { src: '/CIPassed.png', caption: 'CI pipeline 100% passing and optimized' },
           { src: '/AllGreenBlazingFast.png', caption: 'All 62 tests passed in 36.4s '},
+          { src: '/guestAtHome.png', caption: 'Guest role - Home Page'},
 
         ].map(({ src, caption }) => (
           <figure key={src} onClick={() => handleImageClick(src)} className="cursor-pointer">
