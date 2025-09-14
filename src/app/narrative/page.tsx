@@ -1,6 +1,6 @@
 export default function Narrative() {
     return (
-        <main className="container w-full items-center ml-3">
+        <main className="prose prose-lg max-w-4xl mx-auto px-4 py-8">
             <h1 id='header' className='text-4xl font-bold text-red-500 mb-4 '>TechMart Narrative Stories</h1>
             <section id='container' className="flex flex-col gap-5">
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
