@@ -28,6 +28,11 @@ export default function VisualsPage() {
           { src: '/AllGreenBlazingFast.png', caption: 'All 62 tests passed in 36.4s '},
           { src: '/LandingWithGuest.png', caption: 'Guest role - Landing Page'},
           { src: '/guestAtHome.png', caption: 'Guest role - Home Page'},
+          { src: '/userHome.png', caption: 'User role - Home Page Hebrew'},
+          { src: '/dynamicItemGuest.png', caption: 'Guest role - Dynamic Item details Arabic'},
+          { src: '/adminDashboard.png', caption: 'Admin role - Admin Dashboard English'},
+          { src: '/adminDashboardTranslated.png', caption: 'Admin role - Admin Dashboard Arabic'},
+          { src: '/adminEditItemTranslated.png', caption: 'Admin role - Admin Edit Item Arabic'},
 
         ].map(({ src, caption }) => (
           <figure key={src} onClick={() => handleImageClick(src)} className="cursor-pointer">

@@ -85,6 +85,28 @@ export default function Narrative() {
                         I validated this direction with a live LinkedIn poll, and the results confirmed the need for frictionless access.
                     </p>
                 </article>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
+                    <h2 id="10th-article" className="text-2xl font-semibold mb-2">🌍 Internationalization</h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        TechMart isn’t just another e-commerce site—it’s a breakthrough. In a region where most platforms overlook Arabic,<br />
+                        TechMart steps in as the first fully local, trilingual e-commerce solution, offering seamless service in <strong>English, Arabic, and Hebrew</strong>.
+
+                    </p>
+                </article>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
+                    <h2 id="11th-article" className="text-2xl font-semibold mb-2">🌍 How TechMart Speaks Three Languages
+
+                    </h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        TechMart uses i18n for internationalization, supporting both static and dynamic content.<br/>
+                        Every label, placeholder, and message adapts to the user’s language.<br/>
+                        Implemented dir="rtl" and dir="ltr" dynamically based on language context, ensuring proper layout flow for Arabic and Hebrew.
+                        Content is stored in a item_translations table, allowing seamless switching and future scalability. Even admin tools and chatbot responses are localized.
+                        The result? A platform that feels native—no matter the language.
+
+
+                    </p>
+                </article>
 
             </section>
         </main>
