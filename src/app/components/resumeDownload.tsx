@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function ResumeDownload() {
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(100)
 
     const handleDownload = () => {
         setCounter(prev => prev + 1)
