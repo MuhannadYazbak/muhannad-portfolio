@@ -1,13 +1,27 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 export default function ResumeDownload() {
-    const [counter, setCounter] = useState(100)
 
-    const handleDownload = () => {
-        setCounter(prev => prev + 1)
-    }
+    const [counter, setCounter] = useState<number | null>(null);
+
+    useEffect(() => {
+        const fetchCount = async () => {
+            const res = await fetch('/api/increment-download');
+            const data = await res.json();
+            setCounter(data.count);
+        };
+        fetchCount();
+    }, []);
+
+    const incrementDownloadCount = async () => {
+        const res = await fetch('/api/increment-download', { method: 'POST' });
+        const data = await res.json();
+        setCounter(data.count);
+    };
+
 
     return (
         <div className='flex flex-col'>
@@ -17,7 +31,7 @@ export default function ResumeDownload() {
                     className="text-blue-300 hover:text-blue-500"
                     href="/MuhannadCV.pdf"
                     download
-                    onClick={handleDownload}
+                    onClick={incrementDownloadCount}
                 >
                     Download My Resume
                 </a>
