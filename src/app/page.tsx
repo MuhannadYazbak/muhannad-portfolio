@@ -5,10 +5,12 @@ export default async function Home() {
     <main className="prose prose-lg max-w-4xl mx-auto px-4 py-8">
       <h1 className='text-4xl font-bold text-indigo-500'>Muhannad Yazbak's Portfolio</h1>
       <section className="text-gray-800 leading-relaxed rounded-lg p-6 mb-8 shadow-sm">
-        <article id='headline'>Hi, <strong>I'm Muhannad Yazbak</strong> — a Full-Stack Developer and QA Automation Engineer with a dual academic background in Medical Laboratory Science and Information Systems.<br />
-          I specialize in building scalable web applications and robust automation suites using modern technologies like Next.js, Docker, Playwright, and CI/CD pipelines. My work blends precision, performance, and a deep curiosity for how systems behave in real-world environments.<br />
-          My latest project, TechMart, began as a solo learning challenge and is now evolving into a product-grade e-commerce platform. It taught me more than any course could — from architecture decisions to deployment strategies.
-          I'm passionate about health-tech innovation and excited to contribute to systems that improve lives through technology.</article>
+        <article id='headline'>Hi, <strong>I'm Muhannad Yazbak</strong> - Full-Stack Developer and QA Automation Engineer with a dual academic background in Medical Laboratory Science and Information Systems.<br />
+          I specialize in building scalable web applications and intelligent automation systems — from health-tech platforms to AI-powered assistants.<br />
+          My latest solo challenge: upgrading TechMart’s chatbot from rule-based logic to a RAG-powered assistant using FastAPI, LangChain, and OpenRouter. I use AI as a personal development partner — from debugging to architecture.<br />
+          Passionate about improving lives through technology, I bring precision from the lab and agility from the cloud.
+
+        </article>
       </section>
       <h2 className='italic text-l'>📫 Let's connect:</h2>
       <p>- Email:  yazbakm@gmail.com</p>

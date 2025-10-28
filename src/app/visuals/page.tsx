@@ -33,6 +33,9 @@ export default function VisualsPage() {
           { src: '/adminDashboard.png', caption: 'Admin role - Admin Dashboard English'},
           { src: '/adminDashboardTranslated.png', caption: 'Admin role - Admin Dashboard Arabic'},
           { src: '/adminEditItemTranslated.png', caption: 'Admin role - Admin Edit Item Arabic'},
+          { src: '/RAG-smart.png', caption: 'RAG agent understood what is Dev Laptop'},
+          { src: '/RAG-smart2.png', caption: 'RAG agent looked into user orders and retrieved right data'},
+          { src: '/GUI-TechMartRAG.png', caption: 'RAG agent (GUI) understood what is Dev Laptop'},
 
         ].map(({ src, caption }) => (
           <figure key={src} onClick={() => handleImageClick(src)} className="cursor-pointer">

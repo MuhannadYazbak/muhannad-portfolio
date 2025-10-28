@@ -107,6 +107,26 @@ export default function Narrative() {
 
                     </p>
                 </article>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
+                    <h2 id="12th-article" className="text-2xl font-semibold mb-2">💡From Rule-Based to RAG: A 2-Day Sprint That Changed Everything
+                    </h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        I upgraded TechMart’s chatbot from a static rule-based system to a dynamic Retrieval-Augmented Generation (RAG) assistant.<br/>
+                        It now understands multilingual queries, recommends products contextually, and even distinguishes between tablets and smartwatches.<br/>
+                        What started as a two-week sprint turned into a two-day breakthrough.
+
+
+                    </p>
+                </article>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
+                    <h2 id="13h-article" className="text-2xl font-semibold mb-2">💪 RAG-Powered Commerce: FastAPI, OpenRouter, and LangChain in Production
+                    </h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        TechMart now runs a FastAPI backend that wraps a LangChain RAG agent, connected to OpenRouter for multilingual LLM access.<br/>
+                        The frontend fetches real-time responses, and the system is fully modular — with category-aware chunking, user/guest filtering, and admin-level controls.
+
+                    </p>
+                </article>
 
             </section>
         </main>
