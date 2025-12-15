@@ -13,9 +13,9 @@
     "@vercel/analytics": "^1.5.0",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
-    "next": "15.4.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },
