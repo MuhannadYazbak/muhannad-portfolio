@@ -42,30 +42,30 @@ export default async function Projects() {
       </section>
       <hr />
       <section id='chatbot'>
-        <h2 className='text-xl text-indigo-400'>🤖 TechMart Rule-Based Chatbot</h2>
+        <h2 className='text-xl text-indigo-400'>🤖 TechMart RAG-Based AI Agent</h2>
         <h3 className='italic text-l'>Description:</h3>
-        <p>A custom-built chatbot designed to assist users on the TechMart platform. It uses rule-based logic to answer FAQs, guide users through product discovery, and simulate conversational flow. Built with modularity in mind, it’s a great example of your backend logic and UX thinking.</p>
+        <p>An advanced, production-ready AI Assistant microservice designed for the TechMart e-commerce platform. Moving away from legacy rule-based systems, this chatbot leverages Retrieval-Augmented Generation (RAG) to provide dynamic, context-aware responses by querying a semantic vector knowledge base. It delivers highly accurate product discovery, user guidance, and customer support in real-time.</p>
         <h3 className='italic text-l'>Tech Stack:</h3>
-        <p>JavaScript, Node.js, Express, JSON-based rule engine</p>
+        <p>Python, FastAPI, LangChain, OpenAI API, Vector Database (VectorDB), Docker</p>
         <h3 className='italic text-l'>Key Features:</h3>
         <ul>
           <li>
-            <p>💬 Rule-based conversational flow</p>
+            <p>🌐 Native Multilingual Support: Flawlessly processes and responds to user queries in Arabic, Hebrew, and English.</p>
           </li>
           <li>
-            <p>🧠 Modular logic for easy extension</p>
+            <p>🧠 Semantic Search & RAG: Utilizes advanced text embeddings and a Vector Database to retrieve precise platform context before generating responses, eliminating hallucinations.</p>
           </li>
           <li>
-            <p>📦 Integrated with TechMart frontend</p>
+            <p>⚡ High-Performance Microservice: Built as a decoupled, asynchronous FastAPI backend, ensuring low-latency communication with the TechMart frontend.</p>
           </li>
           <li>
-            <p>🛠️ Built for future upgrade to NLP-based chatbot
+            <p>🛠️ Enterprise-Ready Orchestration: Managed using LangChain for robust prompt engineering and conversational memory flow.
               Status:
-              Completed MVP — ready for integration and enhancement
+              Fully Operational Microservice — Integrated into TechMart Ecosystem
               Links:</p>
           </li>
           <li>
-            <a className='text-blue-300 hover:text-blue-400' href='https://www.github.com/MuhannadYazbak/techmart-chatobt'>Chatbot</a>
+            <a className='text-blue-300 hover:text-blue-400' href='https://www.github.com/MuhannadYazbak/techmart-rag'>AI Agent</a>
           </li>
         </ul>
       </section>
