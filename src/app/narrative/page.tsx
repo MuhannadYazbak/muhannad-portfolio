@@ -1,15 +1,18 @@
 export default function Narrative() {
     return (
         <main className="prose prose-lg max-w-4xl mx-auto px-4 py-8">
-            <h1 id='header' className='text-4xl font-bold text-red-500 mb-4 '>TechMart Narrative Stories</h1>
+            <h1 id='header' className='text-4xl font-bold text-red-500 mb-4'>TechMart Narrative Stories</h1>
             <section id='container' className="flex flex-col gap-5">
+                
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
                     <h2 id='1st-article' className="text-2xl font-semibold mb-2">Origin</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         It all started when I visited my cousin, a mobile store/lab owner who casually asked<br />
                         Muhannad are you able to develop a website? and he described some basic requirments.<br />
-                        Few days later I decided to develop a Full-Stack showcase fulfilling his requirments</p>
+                        Few days later I decided to develop a Full-Stack showcase fulfilling his requirments
+                    </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-sky-100">
                     <h2 id='2nd-article' className="text-2xl font-semibold mb-2">Unexpected Pivot</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -20,6 +23,7 @@ export default function Narrative() {
                         I didn’t just switch frameworks—I switched mindsets.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-sky-100">
                     <h2 id='3rd-article' className="text-2xl font-semibold mb-2">Mastery in Motion</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -28,6 +32,7 @@ export default function Narrative() {
                         dynamic pages—I had it all humming. What started as a challenge quickly became a playground.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-sky-100">
                     <h2 id='4th-article' className="text-2xl font-semibold mb-2">Full-Stack Evolution</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -37,6 +42,7 @@ export default function Narrative() {
                         Suddenly, I wasn’t just building—I was engineering. At that point I called the project TechMart.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
                     <h2 id='5th-article' className="text-2xl font-semibold mb-2">Infrastructure Awakening</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -46,23 +52,26 @@ export default function Narrative() {
                         From local dev to cloud-ready in one sprint.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
                     <h2 id='6th-article' className="text-2xl font-semibold mb-2">LinkedIn and CV</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         I processed my showcase turned into a production-grade, great news but something was still missing.<br />
                         So, I participated in a job hunt workshop and realized I have to update my CV and my LinkedIn profile<br />
-                        made those changes step by step, until now I have a polished CV and proactive LinkedIn profile with TechMart brand posts. <br />
+                        made those changes step by step, until now I have a polished CV and proactive LinkedIn profile with TechMart brand posts.<br />
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
                     <h2 id='7th-article' className="text-2xl font-semibold mb-2">UI/UX Approved?</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         👧 I had a tiny visitor — my cousin’s daughter, a soon-to-be 2nd grader.<br />
                         She peeked over my shoulder while I was deep into manual exploratory testing and asked:“Muhannad, are you buying a new phone?”<br />
                         That moment made me smile — because it meant my frontend was so clear, even a 7-year-old thought she was on a real e-commerce site.<br />
-                        I replied with a metaphor she could grasp:“No, I’m building the site that sells phones — like my own Shein version.
+                        I replied with a metaphor she could grasp:“No, I’m building the site that sells phones — like my own Shein version.”
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
                     <h2 id='8th-article' className="text-2xl font-semibold mb-2">🛠️ From Chaos to Confidence: Optimizing TechMart’s CI Pipeline</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -75,6 +84,7 @@ export default function Narrative() {
                         And the cherry on top: I slashed the runtime from ~17 minutes to just ~5 minutes, with test execution clocking in at ~37 seconds.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
                     <h2 id="9th-article" className="text-2xl font-semibold mb-2">🧑‍💻 Guest Role</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
@@ -85,46 +95,60 @@ export default function Narrative() {
                         I validated this direction with a live LinkedIn poll, and the results confirmed the need for frictionless access.
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
                     <h2 id="10th-article" className="text-2xl font-semibold mb-2">🌍 Internationalization</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         TechMart isn’t just another e-commerce site—it’s a breakthrough. In a region where most platforms overlook Arabic,<br />
                         TechMart steps in as the first fully local, trilingual e-commerce solution, offering seamless service in <strong>English, Arabic, and Hebrew</strong>.
-
                     </p>
                 </article>
-                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
-                    <h2 id="11th-article" className="text-2xl font-semibold mb-2">🌍 How TechMart Speaks Three Languages
 
-                    </h2>
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
+                    <h2 id="11th-article" className="text-2xl font-semibold mb-2">🌍 How TechMart Speaks Three Languages</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         TechMart uses i18n for internationalization, supporting both static and dynamic content.<br/>
                         Every label, placeholder, and message adapts to the user’s language.<br/>
-                        Implemented dir="rtl" and dir="ltr" dynamically based on language context, ensuring proper layout flow for Arabic and Hebrew.
-                        Content is stored in a item_translations table, allowing seamless switching and future scalability. Even admin tools and chatbot responses are localized.
+                        Implemented dir="rtl" and dir="ltr" dynamically based on language context, ensuring proper layout flow for Arabic and Hebrew.<br/>
+                        Content is stored in a item_translations table, allowing seamless switching and future scalability. Even admin tools and chatbot responses are localized.<br/>
                         The result? A platform that feels native—no matter the language.
-
-
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-green-100">
-                    <h2 id="12th-article" className="text-2xl font-semibold mb-2">💡From Rule-Based to RAG: A 2-Day Sprint That Changed Everything
-                    </h2>
+                    <h2 id="12th-article" className="text-2xl font-semibold mb-2">💡From Rule-Based to RAG: A 2-Day Sprint That Changed Everything</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         I upgraded TechMart’s chatbot from a static rule-based system to a dynamic Retrieval-Augmented Generation (RAG) assistant.<br/>
                         It now understands multilingual queries, recommends products contextually, and even distinguishes between tablets and smartwatches.<br/>
                         What started as a two-week sprint turned into a two-day breakthrough.
-
-
                     </p>
                 </article>
+
                 <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
-                    <h2 id="13h-article" className="text-2xl font-semibold mb-2">💪 RAG-Powered Commerce: FastAPI, OpenRouter, and LangChain in Production
-                    </h2>
+                    <h2 id="13h-article" className="text-2xl font-semibold mb-2">💪 RAG-Powered Commerce: FastAPI, OpenRouter, and LangChain in Production</h2>
                     <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
                         TechMart now runs a FastAPI backend that wraps a LangChain RAG agent, connected to OpenRouter for multilingual LLM access.<br/>
                         The frontend fetches real-time responses, and the system is fully modular — with category-aware chunking, user/guest filtering, and admin-level controls.
+                    </p>
+                </article>
 
+                {/* NEW DEPLOYMENT STORIES */}
+
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-purple-100">
+                    <h2 id="14th-article" className="text-2xl font-semibold mb-2">🌐 Breaking the Monolith: Multi-Cloud Orchestration</h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        Building locally is great, but production demands structural separation. I broke TechMart out into a fully decoupled system.<br/>
+                        Vercel hosts the Next.js frontend at the edge, Render manages the asynchronous Python FastAPI RAG microservice alongside a Mockoon external payment engine, and Aiven runs a fully managed cloud MySQL instance.<br/>
+                        Each segment does exactly what it was designed to do, keeping compute decoupled from the database layer.
+                    </p>
+                </article>
+
+                <article className="flex flex-col justify-center space-x-5 border-b border-gray-300 pb-4 bg-sky-100">
+                    <h2 id="15th-article" className="text-2xl font-semibold mb-2">🔌 Facing the Production Demons: Secure Sub-systems</h2>
+                    <p className="max-w-3xl text-lg text-gray-700 leading-relaxed transition-transform hover:scale-110">
+                        Deploying to real servers immediately revealed connection constraints. Standard database strings broke over secure network barriers.<br/>
+                        I bypass-engineered the limits by mapping native driver properties explicitly via <code>connect_args</code> over SSL to bind Aiven MySQL to the Render containers safely.<br/>
+                        When LangChain ran into authentication base barriers, I re-routed standard embeddings calls straight through a clean OpenRouter endpoint base definition without mutating code logic. Infrastructure configured, tests fully passed, system live.
                     </p>
                 </article>
 
