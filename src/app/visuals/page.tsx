@@ -19,6 +19,7 @@ export default function VisualsPage() {
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {[
           { src: '/banner.png', caption: 'TechMart Banner' },
+          { src: '/techmart.png', caption: 'TechMart System Blueprint' },
           { src: '/AllureReport.png', caption: 'Allure Report' },
           { src: '/AllureDuration.png', caption: 'Allure Tests Durations' },
           { src: '/TechMartHome.png', caption: 'TechMart Home Flow' },
