@@ -5,6 +5,7 @@ import { useState } from "react"
 export default function Projects() {
   const [isTechMartOpen, setIsTechMartOpen] = useState(false);
   const [isSelfHealingOpen, setIsSelfHealingOpen] = useState(false);
+  const [isInsuranceAppOpen, setIsInsuranceAppOpen] = useState(false);
 
   return (
     <main className="prose prose-lg max-w-4xl mx-auto px-4 py-8 dark:prose-invert text-slate-800 dark:text-slate-200">
@@ -111,7 +112,8 @@ export default function Projects() {
 
       <hr className="my-12 border-slate-300 dark:border-slate-700" />
 
-      {/* ================= 2. AUTONOMOUS PLAYWRIGHT AGENT ================= */}
+      
+      {/* ================= 2. SelfHealing Playwright Agent ================= */}
       <section id="selfHealingPlaywright" className="space-y-4">
         {/* Accordion Toggle Header Button */}
         <button 
@@ -162,6 +164,66 @@ export default function Projects() {
               <span className="font-semibold text-slate-700 dark:text-slate-300">Links: </span>
               <a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1' href='https://github.com/MuhannadYazbak/Playwright-selfHealing-Agent' target='_blank' rel='noreferrer'>
                 Self-Healing Automations Repo ↗
+              </a>
+            </div>
+          </div>
+        )}
+      </section>
+
+      <hr className="my-12 border-slate-300 dark:border-slate-700" />
+
+      {/* ================= 3. Insurance App ================= */}
+      <section id="insuranceApp" className="space-y-4">
+        {/* Accordion Toggle Header Button */}
+        <button 
+          onClick={() => setIsInsuranceAppOpen(!isInsuranceAppOpen)}
+          className="flex items-center justify-between w-full text-left p-4 bg-slate-50 hover:bg-slate-100 dark:bg-slate-900/40 dark:hover:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl transition-all duration-200 group no-underline cursor-pointer"
+          style={{ textDecoration: 'none' }}
+        >
+          <div className="pr-4">
+            <h2 className='text-2xl text-indigo-600 dark:text-indigo-400 font-bold m-0 flex items-center gap-2'>
+              📜 Localized Insurance App
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 mb-0 font-normal normal-case">
+              A localized desktop app for an insurance agent to manage his clients
+            </p>
+          </div>
+          <span className={`text-xl text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-200 shrink-0 ${isSelfHealingOpen ? 'rotate-90' : ''}`}>
+            ▶
+          </span>
+        </button>
+
+        {/* Collapsible Content Section */}
+        {isInsuranceAppOpen && (
+          <div className="pl-6 border-l-2 border-slate-200 dark:border-slate-800 space-y-6 mt-6">
+            <p className="mt-2 text-slate-700 dark:text-slate-300">Desktop personalized CRM and ERP for insurance aget. Managing clients, policies, claims and notes.</p>
+
+            <h3 className='italic text-lg font-medium text-slate-800 dark:text-slate-200 m-0'>Key Features</h3>
+            <ul className='list-disc pl-5 space-y-2'>
+              <li><strong>Clients Manager:</strong> Adding, searching and viewing clients and their policies,claims or notes.</li>
+              <li><strong>Global Search:</strong> A wider search with insurance vendor, policy type, ID number or any piece of Information to facilitate reaching the right policy. </li>
+              <li><strong>Dashboard:</strong> Administrative dashboard with sum of primes, active policies and alerts for expiring policies within 30 days.</li>
+              <li><strong>Notes History:</strong> A global notes section, all notes and by status to keep the progresses flowing.</li>
+              <li><strong>Files storage:</strong> File Archive Storage: Custom local desktop drag-and-drop ingestion system that securely archives documents onto the local file system with timestamp-prefixed tracking and disk-level deletion capabilities.</li>
+            </ul>
+
+            <h3 className='italic text-lg font-medium text-slate-800 dark:text-slate-200 m-0'>Technical Stack</h3>
+            <ul className='list-disc pl-5 space-y-2'>
+              <li><span className="font-semibold">🧑‍💻 Frontend:</span> Vite, React.js (TypeScript), Tailwind CSS</li>
+              <li><span className="font-semibold">🕹️ Backend:</span> Node.js, Electron (Desktop Wrapper)</li>
+              <li><span className="font-semibold">📈 Database:</span> Sqlite</li>
+            </ul>
+
+            <h3 className='italic text-lg font-medium text-slate-800 dark:text-slate-200 m-0'>Architectural Impact</h3>
+            <ul className='list-disc pl-5 space-y-2'>
+              <li><strong>Fully local:</strong> No more monthly fees, or data leakage fears </li>
+              <li><strong>Backup pipeline:</strong> Automated Disaster Recovery Pipeline: An integrated background pipeline utilizing Google Drive OAuth2 integration to automatically compress regional file assets and upload scheduled encrypted database backups daily.</li>
+            </ul>
+
+            <div className='pt-2 text-sm pb-2'>
+              <span className="font-semibold text-slate-700 dark:text-slate-300">Links: </span>
+              <a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1' href='https://github.com/MuhannadYazbak/insurance-app' target='_blank' rel='noreferrer'>
+                Insurance-App Repo ↗
               </a>
             </div>
           </div>
