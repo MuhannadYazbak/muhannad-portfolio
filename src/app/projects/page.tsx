@@ -3,6 +3,7 @@
 import { useState } from "react"
 
 export default function Projects() {
+  const [isCrmOpen, setIsCrmOpen] = useState(false);
   const [isTechMartOpen, setIsTechMartOpen] = useState(false);
   const [isSelfHealingOpen, setIsSelfHealingOpen] = useState(false);
   const [isInsuranceAppOpen, setIsInsuranceAppOpen] = useState(false);
@@ -11,7 +12,96 @@ export default function Projects() {
     <main className="prose prose-lg max-w-4xl mx-auto px-4 py-8 dark:prose-invert text-slate-800 dark:text-slate-200">
       <h1 className='text-4xl font-bold text-indigo-600 dark:text-indigo-400 mb-8'>Projects</h1>
 
-      {/* ================= 1. TECHMART PARENT ECOSYSTEM ================= */}
+      {/* ================= 1. MULTI-TENANT CRM ================= */}
+      <section id="multitenant-crm" className="space-y-4">
+        {/* Accordion Toggle Header Button */}
+        <button 
+          onClick={() => setIsCrmOpen(!isCrmOpen)}
+          className="flex items-center justify-between w-full text-left p-4 bg-slate-50 hover:bg-slate-100 dark:bg-slate-900/40 dark:hover:bg-slate-800/60 border border-slate-200 dark:border-slate-800 rounded-xl transition-all duration-200 group no-underline cursor-pointer"
+          style={{ textDecoration: 'none' }}
+        >
+          <div className="pr-4">
+            <h2 className='text-2xl text-indigo-600 dark:text-indigo-400 font-bold m-0 flex items-center gap-2'>
+              🏢 Multi-Tenant & Multi-Vertical SaaS CRM Platform
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 mb-0 font-normal normal-case">
+              A scalable multi-tenant CRM engine with vertical-specific UI modules, self-service authentication workflows, and a fully automated Playwright E2E testing pipeline in CI/CD.
+            </p>
+          </div>
+          <span className={`text-xl text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-200 shrink-0 ${isCrmOpen ? 'rotate-90' : ''}`}>
+            ▶
+          </span>
+        </button>
+
+        {/* Collapsible Content Section */}
+        {isCrmOpen && (
+          <div className="pl-6 border-l-2 border-slate-200 dark:border-slate-800 space-y-12 mt-6">
+            
+            {/* SUB-SECTION A: Core Platform & Dynamic Verticals */}
+            <div id='crm-core' className="space-y-4 pt-2">
+              <h3 className='text-xl text-slate-800 dark:text-slate-200 font-semibold m-0'>A. Dynamic Multi-Vertical Workspace Architecture</h3>
+              <p>Engineered to support multiple business domains (Legal, Insurance, General) with complete tenant data isolation, dynamic navigation routes, and custom client management sub-tabs based on tenant type.</p>
+
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Tech Stack:</h4>
+              <p className="text-sm text-slate-700 dark:text-slate-300">Next.js, TypeScript, React, Tailwind CSS, Python (FastAPI), APIRouter Architecture, SQLite / Relational DB</p>
+
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Key Features:</h4>
+              <ul className='list-disc pl-5 space-y-1'>
+                <li><strong>Dynamic Workspace Layouts:</strong> Context-aware rendering displaying tailored tabs (Legal Cases, Evidence, and Witnesses for Legal tenants vs. Policies, Vehicles, and Assets for Insurance tenants).</li>
+                <li><strong>Tenant Isolation:</strong> Strict data separation across workspaces preventing cross-tenant data exposure.</li>
+                <li><strong>System Admin Console:</strong> Global management portal for workspace lifecycle provisioning, status freezes, and metrics.</li>
+              </ul>
+            </div>
+
+            <hr className="border-slate-200 dark:border-slate-800 my-4" />
+
+            {/* SUB-SECTION B: Auth & Background Workflows */}
+            <div id='crm-auth' className='space-y-4'>
+              <h3 className='text-xl text-slate-800 dark:text-slate-200 font-semibold m-0'>B. Transactional Auth & Document Management</h3>
+              <p>A full self-service user management module integrated with background email services and asynchronous document ingestion streams.</p>
+
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Tech Stack:</h4>
+              <p className="text-sm text-slate-700 dark:text-slate-300">Resend API, JWT Authentication, Asynchronous File Uploads</p>
+
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Key Features:</h4>
+              <ul className='list-disc pl-5 space-y-2'>
+                <li><strong>Self-Service Auth Workflows:</strong> End-to-end password reset and onboarding engine powered by transactional Resend emails.</li>
+                <li><strong>Document & Note System:</strong> Interactive file handling and note-taking interfaces integrated directly into client lifecycle management.</li>
+              </ul>
+            </div>
+
+            <hr className="border-slate-200 dark:border-slate-800 my-4" />
+
+            {/* SUB-SECTION C: Automation & Testing */}
+            <div id='crm-testing' className="space-y-4 pb-4">
+              <h3 className='text-xl text-slate-800 dark:text-slate-200 font-semibold m-0'>C. Page Object Model E2E Testing & CI/CD Pipeline</h3>
+              <p>Built a robust, flaky-resistant E2E automation framework that executes full lifecycle validation across all dynamic tenant contexts in GitHub Actions.</p>
+              
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Tech Stack:</h4>
+              <p className="text-sm text-slate-700 dark:text-slate-300">Playwright, TypeScript (Page Object Model Pattern), GitHub Actions CI/CD</p>
+
+              <h4 className='italic text-base font-medium text-slate-500 dark:text-slate-400 m-0'>Key Features:</h4>
+              <ul className='list-disc pl-5 space-y-2'>
+                <li><strong>Page Object Model Architecture:</strong> Modular test suite validating auth resets, client CRUD workflows, evidence uploads, and note histories.</li>
+                <li><strong>Headless CI Stabilization:</strong> Synchronized network idle states (`waitForLoadState('networkidle')`) and synthetic React state bindings (`dispatchEvent('change')`) to eliminate timing race conditions.</li>
+                <li><strong>Pipeline Efficiency:</strong> Fully automated GitHub Actions workflow achieving 100% pass rates in under 1m 40s.</li>
+              </ul>
+              
+              <div className='pt-2 text-sm'>
+                <span className='font-semibold text-slate-700 dark:text-slate-300'>Links: </span>
+                <a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-medium' href='https://github.com/MuhannadYazbak/multitenant-crm' target='_blank' rel='noreferrer'>
+                  Multi-Tenant CRM Repo ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        )}
+      </section>
+
+      <hr className="my-12 border-slate-300 dark:border-slate-700" />
+
+      {/* ================= 2. TECHMART PARENT ECOSYSTEM ================= */}
       <section id="techmart-ecosystem" className="space-y-4">
         {/* Accordion Toggle Header Button */}
         <button 
@@ -112,8 +202,7 @@ export default function Projects() {
 
       <hr className="my-12 border-slate-300 dark:border-slate-700" />
 
-      
-      {/* ================= 2. SelfHealing Playwright Agent ================= */}
+      {/* ================= 3. SelfHealing Playwright Agent ================= */}
       <section id="selfHealingPlaywright" className="space-y-4">
         {/* Accordion Toggle Header Button */}
         <button 
@@ -172,7 +261,7 @@ export default function Projects() {
 
       <hr className="my-12 border-slate-300 dark:border-slate-700" />
 
-      {/* ================= 3. Insurance App ================= */}
+      {/* ================= 4. Insurance App ================= */}
       <section id="insuranceApp" className="space-y-4">
         {/* Accordion Toggle Header Button */}
         <button 
@@ -188,7 +277,7 @@ export default function Projects() {
               A localized desktop app for an insurance agent to manage his clients
             </p>
           </div>
-          <span className={`text-xl text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-200 shrink-0 ${isSelfHealingOpen ? 'rotate-90' : ''}`}>
+          <span className={`text-xl text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-200 shrink-0 ${isInsuranceAppOpen ? 'rotate-90' : ''}`}>
             ▶
           </span>
         </button>
@@ -196,11 +285,11 @@ export default function Projects() {
         {/* Collapsible Content Section */}
         {isInsuranceAppOpen && (
           <div className="pl-6 border-l-2 border-slate-200 dark:border-slate-800 space-y-6 mt-6">
-            <p className="mt-2 text-slate-700 dark:text-slate-300">Desktop personalized CRM and ERP for insurance aget. Managing clients, policies, claims and notes.</p>
+            <p className="mt-2 text-slate-700 dark:text-slate-300">Desktop personalized CRM and ERP for insurance agent. Managing clients, policies, claims and notes.</p>
 
             <h3 className='italic text-lg font-medium text-slate-800 dark:text-slate-200 m-0'>Key Features</h3>
             <ul className='list-disc pl-5 space-y-2'>
-              <li><strong>Clients Manager:</strong> Adding, searching and viewing clients and their policies,claims or notes.</li>
+              <li><strong>Clients Manager:</strong> Adding, searching and viewing clients and their policies, claims or notes.</li>
               <li><strong>Global Search:</strong> A wider search with insurance vendor, policy type, ID number or any piece of Information to facilitate reaching the right policy. </li>
               <li><strong>Dashboard:</strong> Administrative dashboard with sum of primes, active policies and alerts for expiring policies within 30 days.</li>
               <li><strong>Notes History:</strong> A global notes section, all notes and by status to keep the progresses flowing.</li>
