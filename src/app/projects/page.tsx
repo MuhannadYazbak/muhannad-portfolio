@@ -22,7 +22,7 @@ export default function Projects() {
         >
           <div className="pr-4">
             <h2 className='text-2xl text-indigo-600 dark:text-indigo-400 font-bold m-0 flex items-center gap-2'>
-              🏢 Multi-Tenant & Multi-Vertical SaaS CRM Platform
+              🏢 Multi-Tenant & Multi-Vertical SaaS CRM Platform (Work In Progress)
             </h2>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 mb-0 font-normal normal-case">
               A scalable multi-tenant CRM engine with vertical-specific UI modules, self-service authentication workflows, and a fully automated Playwright E2E testing pipeline in CI/CD.
@@ -89,9 +89,14 @@ export default function Projects() {
               
               <div className='pt-2 text-sm'>
                 <span className='font-semibold text-slate-700 dark:text-slate-300'>Links: </span>
-                <a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-medium' href='https://github.com/MuhannadYazbak/multitenant-crm' target='_blank' rel='noreferrer'>
+                <ul>
+                <li><a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-medium' href='https://github.com/MuhannadYazbak/multitenant-crm' target='_blank' rel='noreferrer'>
                   Multi-Tenant CRM Repo ↗
-                </a>
+                </a></li>
+                <li><a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-medium' href='https://multitenant-crm-seven.vercel.app/' target='_blank' rel='noreferrer'>
+                  Launch Live Multi-Tenant CRM ↗
+                </a></li>
+                </ul>
               </div>
             </div>
 
@@ -191,7 +196,7 @@ export default function Projects() {
               <div className='pt-2 text-sm'>
                 <span className='font-semibold text-slate-700 dark:text-slate-300'>Links: </span>
                 <a className='text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 font-medium' href='https://ecommerce-t7tm.vercel.app' target='_blank' rel='noreferrer'>
-                  Launch Live TechMart Application Live ↗
+                  Launch Live TechMart Application ↗
                 </a>
               </div>
             </div>
